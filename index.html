@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Portfolio | Desenvolvedor Full Stack</title>
+  <meta name="description" content="Portfólio de desenvolvedor Full Stack. Projetos com código limpo, arquitetura sólida e foco em performance." />
+  <meta name="author" content="Dev Portfolio" />
+  <link rel="canonical" href="https://seudominio.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dev Portfolio | Full Stack Developer" />
+  <meta property="og:description" content="Portfólio de desenvolvedor Full Stack com código limpo e foco em performance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dev Portfolio | Full Stack Developer" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Seu Nome",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://seudominio.com",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header" role="banner">
+    <a href="#" class="header-brand" aria-label="Home">
+      &lt;<span class="accent">Dev</span>/&gt;
+    </a>
+
+    <nav aria-label="Main navigation">
+      <ul class="header-nav">
+        <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <!-- Language Selector -->
+      <div class="lang-selector" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="pt" aria-pressed="true">PT</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-modal="true">
+    <a href="#about" data-i18n="nav.about">Sobre</a>
+    <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+    <a href="#projects" data-i18n="nav.projects">Projetos</a>
+    <a href="#contact" data-i18n="nav.contact">Contato</a>
+  </div>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <div class="hero-container">
+      <!-- Text Content -->
+      <div class="hero-text">
+        <p class="hero-greeting" data-i18n="hero.greeting">// Olá, mundo! Eu sou</p>
+        <h1 class="hero-title">
+          <span data-i18n="hero.name">Seu Nome</span><br />
+          <span class="gradient-text" data-i18n="hero.role">Desenvolvedor Full Stack</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Transformo ideias em experiências digitais com código limpo, arquitetura sólida e foco em performance.</p>
+        <a href="#projects" class="btn-glow">
+          <span data-i18n="hero.cta">Ver Projetos</span>
+          <span class="btn-arrow">→</span>
+        </a>
+        <div class="hero-tags">
+          <span class="hero-tag">TypeScript</span>
+          <span class="hero-tag">React</span>
+          <span class="hero-tag">Node.js</span>
+          <span class="hero-tag">Python</span>
+          <span class="hero-tag">PostgreSQL</span>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="hero-image">
+        <div class="profile-frame">
+          <img class="profile-img" src="./assets/minha-foto.jpg" alt="Foto de perfil" loading="eager" width="320" height="320" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS & TOOLBOX ====== -->
+  <section class="skills-section" id="skills" aria-label="Skills & Toolbox">
+    <div class="skills-container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="skills.label">// Stack Técnica</p>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Toolbox</span></h2>
+        <p class="section-desc" data-i18n="skills.desc">Ferramentas e tecnologias que uso para construir soluções robustas e escaláveis.</p>
+      </div>
+
+      <!-- Frontend -->
+      <div class="skills-category">
+        <h3 class="category-title" data-i18n="skills.cat.frontend">⚡ Frontend</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">TS</div>
+            <div class="skill-info">
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 90%"></div></div>
+            </div>
+            <span class="skill-badge badge-advanced">Avançado</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚛</div>
+            <div class="skill-info">
+              <span class="skill-name">React</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 88%"></div></div>
+            </div>
+            <span class="skill-badge badge-advanced">Avançado</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">N</div>
+            <div class="skill-info">
+              <span class="skill-name">Next.js</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 70%"></div></div>
+            </div>
+            <span class="skill-badge badge-intermediate">Intermediário</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <div class="skill-info">
+              <span class="skill-name">HTML5 / CSS3</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 95%"></div></div>
+            </div>
+            <span class="skill-badge badge-advanced">Avançado</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <div class="skill-info">
+              <span class="skill-name">Tailwind CSS</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 85%"></div></div>
+            </div>
+            <span class="skill-badge badge-advanced">Avançado</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">V</div>
+            <div class="skill-info">
+              <span class="skill-name">Vue.js</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 60%"></div></div>
+            </div>
+            <span class="skill-badge badge-intermediate">Intermediário</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skills-category">
+        <h3 class="category-title" data-i18n="skills.cat.backend">🔧 Backend</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🟢</div>
+            <div class="skill-info">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 85%"></div></div>
+            </div>
+            <span class="skill-badge badge-advanced">Avançado</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🐍</div>
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 72%"></div></div>
+            </div>
+            <span class="skill-badge badge-intermediate">Intermediário</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🐘</div>
+            <div class="skill-info">
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 80%"></div></div>
+            </div>
+            <span class="skill-badge badge-advanced">Avançado</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📡</div>
+            <div class="skill-info">
+              <span class="skill-name">REST / GraphQL</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 75%"></div></div>
+            </div>
+            <span class="skill-badge badge-intermediate">Intermediário</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">E</div>
+            <div class="skill-info">
+              <span class="skill-name">Express</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 82%"></div></div>
+            </div>
+            <span class="skill-badge badge-advanced">Avançado</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🍃</div>
+            <div class="skill-info">
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 65%"></div></div>
+            </div>
+            <span class="skill-badge badge-intermediate">Intermediário</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps & Tools -->
+      <div class="skills-category">
+        <h3 class="category-title" data-i18n="skills.cat.tools">🛠 DevOps & Ferramentas</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🔀</div>
+            <div class="skill-info">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 90%"></div></div>
+            </div>
+            <span class="skill-badge badge-advanced">Avançado</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🐳</div>
+            <div class="skill-info">
+              <span class="skill-name">Docker</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 68%"></div></div>
+            </div>
+            <span class="skill-badge badge-intermediate">Intermediário</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🐧</div>
+            <div class="skill-info">
+              <span class="skill-name">Linux</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 70%"></div></div>
+            </div>
+            <span class="skill-badge badge-intermediate">Intermediário</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🔄</div>
+            <div class="skill-info">
+              <span class="skill-name">CI/CD</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 45%"></div></div>
+            </div>
+            <span class="skill-badge badge-learning">Aprendendo</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🎯</div>
+            <div class="skill-info">
+              <span class="skill-name">Figma</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 60%"></div></div>
+            </div>
+            <span class="skill-badge badge-intermediate">Intermediário</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">☁</div>
+            <div class="skill-info">
+              <span class="skill-name">AWS</span>
+              <div class="skill-xp"><div class="skill-xp-fill" style="--xp: 40%"></div></div>
+            </div>
+            <span class="skill-badge badge-learning">Aprendendo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="/main.js"></script>
+</body>
+</html>
