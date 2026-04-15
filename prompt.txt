@@ -1,0 +1,67 @@
+<!-- 
+
+Contexto do Projeto: Estou desenvolvendo meu portfólio pessoal de programador. O objetivo é um site de página única (SPA), focado em uma estética Clean, Corporativa e Tech.
+
+Restrições Técnicas:
+
+Use apenas HTML5 semântico, CSS3 moderno (Custom Properties, Flexbox e Grid) e JavaScript Vanilla.
+
+Não utilize frameworks (React, Vue) nem bibliotecas de CSS (Tailwind, Bootstrap).
+
+O código deve ser limpo, comentado e focado em performance.
+
+O código deve ter um ótimo SEO. 
+
+Regra de pastas: 
+asstes : ./assets/minha-foto.jpg
+
+css e js separados do html.
+
+Diretrizes de Design:
+
+Cores: Fundo dark (#0D1117), textos em tons de branco e cinza, e detalhes (botões/hovers) em gradientes ciano/roxo.
+
+Estética: Glassmorphism sutil, bordas arredondadas e fontes monoespaçadas para detalhes técnicos.
+
+Responsividade: O código deve ser "Mobile First".
+
+E SEMPRE ME RETORNE O CÓDIGO HTML, CSS E JS
+
+-->
+
+<!-- 
+
+Requisição 1: Gere a estrutura inicial (HTML/CSS/JS) focada no Hero Section e Header.
+
+Header: Fixo, com seletor de idioma (PT/EN) e links de navegação.
+
+Conteúdo Hero: Lado esquerdo com título de impacto, subtítulo e botão 'Glow'. Lado direito com espaço para foto de perfil com moldura de gradiente animada.
+
+Funcionalidade Tech: Um script JS que gerencia a troca de idiomas via objeto JSON (sem recarregar a página) e um efeito de rastro de luz que segue o movimento do mouse."
+
+Requisição 2: "Gere a seção 'Skills & Toolbox'.
+
+Use o layout de cards com Glassmorphism.
+
+Cada card exibe o nome da tecnologia em fonte monoespaçada. Ao passar o mouse, o card deve revelar um 'badge' de nível (Ex: Intermediário) ou tempo de experiência.
+
+Adicione o Cursor Customizado aqui: um círculo que segue o mouse com atraso e reage (aumenta) ao entrar nos cards de skills."
+
+Requisição 3: "Gere a Seção de Projetos usando layout Bento Grid.
+
+Os cards devem ter fundos semi-transparentes (blur) e bordas finas.
+
+Inclua botões de filtro no topo (Todos, Frontend, Backend).
+
+Lógica JS: Implemente o filtro para que os cards apareçam/desapareçam com uma animação de fade-in suave."
+
+
+Requisição 4: "Gere o Formulário de Contato e o Rodapé.
+
+Formulário: Design minimalista (apenas linha inferior), com validação Regex em tempo real no campo de e-mail (borda fica verde se estiver correto).
+
+Easter Egg (Terminal): No rodapé, inclua um pequeno input que simula um Terminal. Se digitar 'help', mostra comandos. Se digitar 'cv', simula o download do currículo.
+
+Persistência: Garanta que a escolha de idioma seja salva no localStorage."
+
+-->
