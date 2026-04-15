@@ -1,0 +1,934 @@
+﻿<html lang="pt-BR">
+
+<head>
+
+    <title>Bubbe</title>
+
+    <meta name="description" content="Plataforma Bubbe: sistema digital para gerenciamento de cantinas escolares com carteira
+         virtual, onde responsáveis podem adicionar créditos, controlar limites de consumo e acompanhar 
+         as compras dos alunos de forma prática e segura.">
+    <meta name="keywords"
+        content="cantina escolar, sistema para cantina, gestão de cantina escolar, recarga cantina escola, controle de cantina">
+    <meta name="robots" content="index, follow">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Bubbe - Gestão de Cantinas Escolares">
+
+    <meta property="og:description"
+        content="Descubra a plataforma Bubbe para cantinas escolares — solução digital que moderniza as vendas, facilita recargas online, acelera o atendimento e oferece mais controle para escolas, pais e alunos.">
+
+    <meta property="og:image" content="./assets/fotos-site/logo_bubbe.png">
+
+    <meta property="og:url" content="https://bubbe.com.br">
+
+    <meta property="og:type" content="website">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </noscript>
+
+    <link rel="preload" href="./assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://bubbe.com.br/">
+
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bubbe Tecnologia",
+        "url": "https://bubbe.com.br",
+        "logo": "https://bubbe.com.br/assets/fotos-site/logo-bubbe-preto.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "atendimento@bubbe.com.br",
+            "contactType": "customer support"
+        }
+    }
+    </script>
+
+    <style>.header{width:100%;padding:16px 24px;display:flex;align-items:center;justify-content:space-around;background:#fff;position:relative;z-index:50}@media (min-width:768px){.header{padding:16px 48px}}.logo{display:flex;align-items:center;gap:8px;text-decoration:none}.logo-icon{width:40px;height:40px;border-radius:8px;background:#22c55e;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}.logo-text{font-size:24px;font-weight:700;color:#1a1a1a}.nav-desktop{display:none;align-items:center;gap:32px}@media (min-width:768px){.nav-desktop{display:flex}}.nav-link{position:relative;text-decoration:none;color:#6b7280;cursor:pointer;font-size:15px;padding-bottom:4px;transition:color 0.3s ease}.nav-link:hover{color:#FF9500}.nav-link::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0%;background-color:#FF9500;transition:width 0.2s ease}.nav-link:hover::after{width:100%}.nav-link.active-pais{color:#FF9500;font-weight:600;border-bottom:2px solid #FF9500}.btns-desktop{display:none;align-items:center;gap:12px}@media (min-width:768px){.btns-desktop{display:flex}}.btn{padding:10px 20px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:none;transition:opacity 0.2s}.btn:hover{opacity:0.85}.btn-secondary{background:#f3f4f6;color:#1a1a1a}.btn-primary{background:var(--bubbe-cyan);color:#fff}.hamburger{display:block;background:none;border:none;cursor:pointer;padding:8px;z-index:60;position:relative}@media (min-width:768px){.hamburger{display:none}}.hamburger svg{width:28px;height:28px;color:#1a1a1a}.hamburger .icon-x{display:none}.hamburger.active .icon-menu{display:none}.hamburger.active .icon-x{display:block}.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:40;opacity:0;pointer-events:none;transition:opacity 0.3s}.overlay.active{opacity:1;pointer-events:auto}@media (min-width:768px){.overlay{display:none}}.sidebar{position:fixed;top:0;right:0;height:100%;width:288px;background:#fff;z-index:50;box-shadow:-4px 0 20px rgba(0,0,0,0.15);transform:translateX(100%);transition:transform 0.3s ease-in-out}.sidebar.btn-open{transform:translateX(0)}.sidebar.active{transform:translateX(0)}@media (min-width:768px){.sidebar{display:none}}.sidebar-header{display:flex;justify-content:flex-end;padding:16px}.sidebar-header button{background:none;border:none;cursor:pointer}.sidebar-header svg{width:28px;height:28px;color:#1a1a1a}.sidebar-nav{display:flex;flex-direction:column;gap:16px;padding:0 24px;margin-top:16px}.sidebar-link{text-decoration:none;font-size:18px;padding:8px 0;border-bottom:1px solid #e5e7eb;color:#6b7280;transition:color 0.2s;position:relative;cursor:pointer;transition:color 0.3s ease}.sidebar-link::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0%;background-color:#FF9500;transition:width 0.2s ease}.sidebar-link:hover::after{width:100%}.sidebar-link:hover{color:#FF9500}.sidebar-link.active-pais{color:#FF9500;font-weight:600;border-bottom:2px solid #FF9500}.sidebar-btns{display:flex;flex-direction:column;gap:12px;margin-top:24px;padding:0 24px}.sidebar-btns .btn{width:100%;text-align:center}</style>
+</head>
+
+<body>
+    <!-- <header>
+        <a href="index.html" class="logo" aria-label="Logo Bubbe">
+            <img src="assetsfotos-site/logo-bubbe-preto.png" alt="Logo Bubbe">
+        </a> -->
+
+    <!-- Botão hamburguer (só aparece quando menu fechado) -->
+    <!-- <div class="hamburger" *ngIf="!menuOpen" (click)="toggleMenu()">
+            &#9776;
+        </div> -->
+
+    <!-- Overlay -->
+    <!-- <div class="overlay" *ngIf="menuOpen" (click)="closeMenu()"></div> -->
+
+    <!-- Aside -->
+    <!-- <aside class="menu" [class.open]="menuOpen">
+            <nav>
+                <ul>
+                    <li class="active1" aria-label="cantinas-escolas" onclick="goTo('cantinas-escolas')">Cantinas e
+                        Escolas</li>
+                    <li class="active" aria-label="Pais e Alunos">Pais e Alunos</li>
+                    <li class="active2" aria-label="Ajuda" onclick="goTo('faq')">Ajuda</li>
+                    <li class="login" aria-label="Entrar" onclick="goTo('entrar')">Entrar</li>
+                    <li class="login laranja" aria-label="Cadastrar" onclick="goTo('cadastrar')">Cadastrar</li>
+                </ul>
+            </nav>
+        </aside>
+    </header> -->
+
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <a href="/" class="logo" aria-label="Logo Bubbe">
+            <img src="./assets/fotos-site/logo-bubbe-preto.png" alt="Logo Bubbe">
+            <!-- <div class="logo-icon">B</div>
+            <span class="logo-text">Bubbe</span> -->
+        </a>
+
+        <nav class="nav-desktop">
+            <a href="cantinas-escolas.html" aria-label="Cantinas e Escolas" class="nav-link">Cantinas e
+                Escolas</a>
+            <a href="#" class="nav-link active-pais" aria-label="Pais e Alunos">Pais e Alunos</a>
+            <a href="#" onclick="goTo('faq')" class="nav-link" aria-label="Ajuda">Ajuda</a>
+
+        </nav>
+
+        <div class="btns-desktop">
+            <button class="btn btn-secondary" aria-label="Entrar" onclick="goTo('entrar')">Entrar</button>
+            <button class="btn btn-primary" aria-label="Cadastrar" onclick="goTo('cadastrar')">Cadastrar</button>
+        </div>
+
+        <button class="hamburger" id="menuToggle" aria-label="Menu">
+            <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- ===== OVERLAY ===== -->
+    <div class="overlay" id="overlay2"></div>
+
+    <!-- ===== SIDEBAR MOBILE ===== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button id="sidebarClose" aria-label="Fechar">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="cantinas-escolas.html" class="sidebar-link">Cantinas e Escolas</a>
+            <a href="#" class="sidebar-link active-pais">Pais e Alunos</a>
+        </nav>
+        <div class="sidebar-btns">
+            <button aria-label="Entrar" class="btn btn-secondary" onclick="goTo('entrar')">Entrar</button>
+            <button aria-label="Cadastrar" class="btn btn-primary" onclick="goTo('cadastrar')">Cadastrar</button>
+        </div>
+    </aside>
+
+
+
+
+    <main>
+        <section class="hero-section">
+
+            <img src="./assets/fotos-site/banner-mae.webp" alt="Mais controle e segurança para pais"
+                class="hero-lcp-image" fetchpriority="high" decoding="async" width="1920" height="1080">
+
+            <div class="hero-container">
+                <div class="hero-grid">
+
+                    <div class="container-video">
+                        <div class="video-wrapper" id="openVideoBtn">
+
+                            <div class="video-thumbnail">
+                                <div class="video-overlay pais"></div>
+
+                                <div class="play-button-container">
+                                    <div class="play-button-wrapper">
+                                        <div class="play-pulse"></div>
+
+                                        <button class="play-button" aria-label="Reproduzir vídeo">
+                                            <svg class="play-icon pais" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon points="5,3 19,12 5,21"></polygon>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="content-wrapper">
+                        <span class="hero-title">Mais Controle e Segurança para Você !</span>
+
+                        <p class="hero-description">
+                            Com a chegada da Bubbe seu filho terá um
+                            <span>recreio maior, mais seguro e mais saudável</span>.
+                            Você ganha <span>controle e tranquilidade</span>.
+                        </p>
+
+                        <button class="cta-button pais" onclick="goTo('cadastrar')"
+                            aria-label="Botão para cadastrar na plataforma Bubbe">
+                            Cadastrar agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="video-modal" id="videoModal">
+
+            <div class="modal-overlay" id="overlay"></div>
+
+            <div class="modal-content">
+                <button class="modal-close" id="closeVideo" aria-label="Fechar vídeo">×</button>
+                <iframe id="videoFrame" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+
+        <section class="controle-container">
+            <h1 class="titulo">Controle Total na <span class="title-bubbe-color">Palma da Mão</span></h1>
+            <p class="subtitulo">
+                Gerencie tudo com facilidade e segurança através do nosso aplicativo
+            </p>
+
+            <section class="controle-pais">
+                <div class="coluna-direita">
+                    <img src="./assets/fotos-site/iPhone16Pro.webp" alt="aplicativo bubbe" loading="lazy" />
+                </div>
+                <div class="coluna-esquerda">
+                    <div class="cards" id="recursosContainer">
+                    </div>
+                </div>
+            </section>
+
+            <div class="downloads">
+                <h2>Baixe agora e comece a usar</h2>
+                <div class="botoes">
+                    <a href="https://apps.apple.com/us/app/bubbe/id6481420514" class="btn appstore" target="_blank"
+                        aria-label="Botão de installar no App Store"><img class="app-store"
+                            src="./assets/fotos-site/appStore.webp" alt="Botão de installar no App Store" loading="lazy"></a>
+                    <a href="https://play.google.com/store/apps/details?id=br.com.bubbe.bubbeappflutter"
+                        class="btn googleplay" target="_blank" aria-label="Botão de installar no Google Play"><img
+                            src="./assets/fotos-site/googlePlay.webp" alt="Botão de installar no Google Play" loading="lazy"></a>
+                </div>
+                <p class="compatibilidade">Compatível com iOS 13+ e Android 8+</p>
+            </div>
+        </section>
+
+
+
+        <section class="pdv-section">
+
+            <h1 class="titulo-pdv">
+                Menos<span> fila </span>para o seu filho
+
+                <img src="./assets/fotos-site/totem/mesa.webp" alt="Mesa" class="icone-mesa" />
+            </h1>
+
+            <div class="pdv-container">
+                <img src="./assets/fotos-site/fluxo-recarga.webp" alt="Fluxo de recarga do sistema Bubbe" loading="lazy">
+            </div>
+
+
+            <section class="flow-section">
+
+
+                <div class="flow-container">
+                    <div class="flow-main">
+                        <div class="flow-step">
+
+                            <img src="./assets/fotos-site/totem/fluxo1-1.webp"
+                                alt="Fluxo de recarga do sistema Bubbe - pai fazendo recarga no app" loading="lazy">
+                        </div>
+
+                        <div class="flow-arrow">➜</div>
+
+                        <div class="flow-step">
+
+                            <img src="./assets/fotos-site/totem/fluxo1-2.webp"
+                                alt="Fluxo de recarga do sistema Bubbe - aluno no totem">
+                        </div>
+
+                        <div class="flow-arrow">➜</div>
+
+                        <div class="flow-step">
+
+                            <img src="./assets/fotos-site/totem/fluxo1-3.webp"
+                                alt="Fluxo de recarga do sistema Bubbe - aluno retirando lanche no totem">
+                        </div>
+                    </div>
+
+                    <div class="connection-line">
+                        <div class="line"></div>
+                        <span class="or-badge">OU</span>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="flow-alternative">
+                        <div class="alt-title">
+                            Fluxo de Reserva Antecipada
+                        </div>
+
+                        <div class="alt-steps">
+                            <div class="alt-step">
+
+                                <img src="./assets/fotos-site/totem/fluxo2-1.webp"
+                                    alt="Fluxo de reserva antecipada - pai fazendo reserva no app">
+                            </div>
+
+                            <div class="alt-step">
+
+                                <img src="./assets/fotos-site/totem/fluxo1-3.webp"
+                                    alt="Fluxo de reserva antecipada - cantina confere a reserva">
+                            </div>
+
+                            <div class="alt-step">
+
+                                <img src="./assets/fotos-site/totem/retirando-lanche.webp"
+                                    alt="Fluxo de reserva antecipada - Aluno retirando lanche no totem">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <section class="partners-section">
+            <div class="container">
+                <div class="section-header-beneficios">
+                    <h2 class="section-title-beneficios">Benefícios para toda a <span>família</span></h2>
+                    <p class="section-subtitle-beneficios">Parcerias exclusivas com descontos especiais para pais e
+                        filhos</p>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Card Para os Filhos -->
+                    <div class="partner-card">
+                        <div class="floating-icon cyan">
+                            <img src="./assets/fotos-site/rede-parceirias/castelo-icon.webp" alt="Ícone de castelo" loading="lazy">
+                        </div>
+                        <div class="card-content cyan">
+                            <h3 class="card-title">Para os <span class="cyan">filhos</span></h3>
+                            <div class="logos-area">
+                                <img src="./assets/fotos-site/rede-parceirias/beneficios-filhos.webp"
+                                    alt="Logos de rede parceirias para filhos" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Para os Pais -->
+                    <div class="partner-card">
+                        <div class="floating-icon violet">
+                            <img src="./assets/fotos-site/rede-parceirias/diamante-icon.webp" alt="ícone de diamante" loading="lazy">
+                        </div>
+                        <div class="card-content violet">
+                            <h3 class="card-title">Para os <span class="violet">pais</span></h3>
+                            <div class="logos-area">
+                                <img src="./assets/fotos-site/rede-parceirias/beneficios-pais.webp"
+                                    alt="Logos de rede parceirias para pais" class="logos-image" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonials-section">
+            <div class="container">
+
+                <!-- Header -->
+                <div class="section-header">
+                    <h2 class="section-title">
+                        O Que Dizem os
+                        <span class="highlight">
+                            Pais
+                            <svg viewBox="0 0 200 12" fill="none">
+                                <path d="M2 10C50 4 150 4 198 10" stroke="#f97316" stroke-width="3"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </h2>
+
+                    <p class="section-description">
+                        Histórias reais de famílias que confiam em nosso trabalho.
+                    </p>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="testimonials-grid" id="testimonialsContainer">
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!--==================-->
+        <!-- MODAL INDICACAO  -->
+        <!--==================-->
+
+        <section class="ctn-indicacao">
+
+            <button class="toggle-btn" id="closeBalloonBtn" aria-label="Fechar balão">
+                ✕
+            </button>
+
+            <div class="balloon" id="balloon">
+                <p>INDIQUE UMA ESCOLA!</p>
+            </div>
+
+            <button class="megafone-btn" id="openModalBtn" aria-label="Abrir modal de indicação">
+                <img src="./assets/fotos-site/megafone.webp" alt="Botão de indicar escola para a Bubbe">
+            </button>
+
+        </section>
+
+
+        <section class="modalIndicacao" id="modalIndicacao">
+            <div class="modal-content-indicacao">
+                <span class="close" id="closeModalBtn" aria-label="Fechar modal">&times;</span>
+
+                <h2>Indique uma escola para a Bubbe!</h2>
+
+                <form id="formIndicacao">
+
+                    <label for="nomeEscola">Nome da Escola:</label>
+                    <input type="text" id="nomeEscola" name="nomeEscola" required>
+
+                    <label for="contatoEscola">Contato da Escola (email ou telefone):</label>
+                    <input type="text" id="contatoEscola" name="contatoEscola" required>
+
+                    <button type="submit" aria-label="Enviar indicação">
+                        Enviar indicação
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+
+
+        <!--======-->
+        <!-- FAQ  -->
+        <!--======-->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <!-- Header -->
+                <div class="faq-header">
+                    <!-- <span class="faq-badge">Dúvidas Frequentes</span> -->
+                    <h2 class="faq-title">Perguntas Frequentes</h2>
+                    <p class="faq-subtitle">Encontre respostas para as principais dúvidas sobre nossos programas e
+                        serviços.</p>
+                </div>
+
+                <!-- Accordion -->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" aria-label="Reembolso de valor">
+                            <span>Reembolso de valor</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Recargas feitas por <strong>cartão de crédito</strong> ou <strong>PayPal</strong>
+                                    ficam
+                                    em custódia da PayPal por <strong>até 7 dias corridos
+                                    </strong>. A Bubbe atua apenas como intermediadora do pagamento e não realiza a
+                                    gestão
+                                    dos valores.
+                                    A <strong>Bubbe</strong> atua apenas como <strong>intermediadora do
+                                        pagamento</strong> e
+                                    não realiza a gestão dos valores.
+                                    gestão dos valores.
+                                </p> <br>
+                                <p>Dentro desse prazo, é possível solicitar o cancelamento da recarga com a Bubbe,
+                                    <strong>desde
+                                        que o saldo não tenha sido utilizado</strong> , com <strong>reembolso integral,
+                                        incluindo as taxas</strong>.
+                                </p> <br>
+                                <p>Após os 7 dias, o valor é <strong>transferido à cantina</strong>. A partir desse
+                                    momento, <strong>qualquer
+                                        solicitação de reembolso deve ser feita diretamente com a cantina</strong>.
+                                </p> <br>
+                                <p><strong>Recargas via Pix</strong> devem ser <strong>reembolsadas diretamente pela
+                                        cantina</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger"
+                            aria-label="Esqueci minha senha. Como posso redefinir meu acesso?">
+                            <span>Esqueci minha senha. Como posso redefinir meu acesso?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Siga o passo a passo abaixo para redefinir sua senha:</p>
+                                <ul>
+                                    <li>Acesse a tela inicial do app ou do site da <strong>Bubbe</strong>.</li>
+                                    <li>Clique na opção <strong>“Entrar”</strong>.</li>
+                                    <li>Selecione <strong>“Esqueci minha senha”</strong>.</li>
+                                    <li>Informe o <strong>e-mail cadastrado</strong> na plataforma.</li>
+                                    <li>Você receberá um e-mail com as instruções (verifique também o
+                                        <strong>spam</strong>).
+                                    </li>
+                                    <li>Após criar a nova senha, retorne ao app e faça o <strong>login
+                                            normalmente</strong>.</li>
+                                </ul>
+                                <br>
+                                Caso não localize o e-mail, <strong>verifique a caixa de spam</strong>. Se a dificuldade
+                                persistir, entre
+                                em contato com a equipe da Bubbe.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger"
+                            aria-label="Como adicionar um responsável adicional ao dependente?">
+                            <span> Como adicionar um responsável adicional ao dependente?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Para adicionar um responsável adicional, siga os passos abaixo:</p>
+                                <ul>
+                                    <li>Acesse o site <strong>www.bubbe.com.br</strong> e faça login na sua conta.</li>
+                                    <li>Selecione o <strong>perfil do aluno</strong> desejado.</li>
+                                    <li>Clique na opção <strong>“Editar informações”</strong>.</li>
+                                    <li>No rodapé da tela, localize a opção <strong>“Responsável adicional”</strong> e
+                                        realize o cadastro.</li>
+                                </ul>
+                                <br>
+
+                                <p><strong>Permissões do responsável adicional:</strong></p>
+                                <p>O responsável adicional poderá:</p>
+                                <ul class="ulDisc">
+                                    <li>Visualizar o <strong>extrato de consumo</strong></li>
+                                    <li>Realizar <strong>recargas</strong></li>
+                                    <li>Criar e gerenciar a <strong>lancheira</strong></li>
+                                    <li>Alterar <strong>limites de consumo</strong></li>
+                                    <li>Alterar <strong>restrições alimentares</strong></li>
+                                    <li>Receber <strong>e-mails de consumo</strong></li>
+                                    <li>Transferir <strong>saldo</strong> de outro dependente para o adicional</li>
+                                </ul>
+
+                                <p><strong>OBS:</strong> Transferência de saldo entre alunos só é permitido no sistema
+                                    desde que estejam na <strong>mesma escola</strong>.<br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger"
+                            aria-label="Como realizar o primeiro cadastro e as configurações iniciais da conta ?">
+                            <span>Como realizar o primeiro cadastro e as configurações iniciais da conta ?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Para realizar o primeiro cadastro na Bubbe, siga os passos abaixo:</p>
+                                <ul>
+                                    <li>Acesse o <strong>aplicativo Bubbe</strong> ou o <strong>site oficial</strong>.
+                                    </li>
+                                    <li>Selecione a opção para <strong>criar uma nova conta</strong>.</li>
+                                    <li>Preencha os <strong>dados do responsável</strong>, conforme solicitado.</li>
+                                    <li>Cadastre o <strong>dependente</strong>, informando os dados obrigatórios.</li>
+                                </ul>
+
+                                <p>Após concluir o cadastro, acesse o <strong>perfil do dependente</strong> para
+                                    realizar as configurações iniciais, como:</p>
+
+                                <ul class="ulDisc">
+                                    <li>Definição de <strong>limites de consumo</strong></li>
+                                    <li>Configuração de <strong>restrições alimentares</strong></li>
+                                    <li>Ativação de <strong>notificações e controles</strong></li>
+                                </ul>
+
+                                <p><strong>Salve as informações</strong> e comece a utilizar a plataforma normalmente.
+                                </p>
+
+                                <p>Caso encontre qualquer dificuldade durante o cadastro, a <strong>equipe da
+                                        Bubbe</strong> está à disposição para auxiliar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger"
+                            aria-label="Meu dependente já está pré-cadastrado na Bubbe? Como posso verificar?">
+                            <span> Meu dependente já está pré-cadastrado na Bubbe? Como posso verificar?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Em alguns casos, o aluno já pode estar pré-cadastrado pela escola. A verificação e
+                                    vinculação desse cadastro devem ser realizadas <strong>exclusivamente pelo
+                                        aplicativo</strong> da Bubbe.</p>
+
+                                <p>Caso ainda não possua uma conta, o responsável deverá criar seu acesso no próprio
+                                    aplicativo antes de iniciar o processo.</p>
+
+                                <p>Siga os passos abaixo:</p>
+
+                                <ul>
+                                    <li>Acesse o app e clique em <strong>“Primeiro cadastro”</strong> (ou faça login se
+                                        já tiver conta).</li>
+                                    <li>Na tela inicial, clique no ícone <strong>“+” (Adicionar dependente)</strong>.
+                                    </li>
+                                    <li>Selecione a opção <strong>“Pré-cadastro”</strong>.</li>
+                                    <li><span style="color: #d32f2f;"><strong>Não selecione</strong></span> a opção
+                                        <strong>“Novo cadastro”</strong>, destinada a alunos sem registro prévio.
+                                    </li>
+                                    <li>Selecione a escola ou informe o <strong>ID do aluno</strong>.</li>
+                                    <li>Clique em <strong>Confirmar</strong> para concluir a vinculação.</li>
+                                </ul>
+
+                                <p>Após a confirmação, o aluno será <strong>automaticamente vinculado</strong> à conta
+                                    do responsável.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger"
+                            aria-label="Tenho dois dependentes. É possível transferir saldo de um para o outro?">
+                            <span>Tenho dois dependentes. É possível transferir saldo de um para o outro?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Sim, é possível transferir saldo entre dependentes <strong>desde que ambos estejam
+                                        vinculados ao
+                                        mesmo responsável (mesmo ID) e matriculados na mesma escola.</strong></p>
+
+                                <p>A transferência <strong>não é permitida</strong> quando os dependentes estão
+                                    cadastrados em <strong>escolas
+                                        diferentes</strong>, mesmo que pertençam ao mesmo responsável.</p>
+
+                                <p>Caso os dependentes atendam a esses critérios, a opção de transferência ficará
+                                    disponível no aplicativo para realização do processo.</p>
+
+                                <br>
+                                <p><strong>Web:</strong>
+                                    No card do aluno, clique em <strong>“Transferir saldo”</strong> (abaixo de Recarga),
+                                    selecione quem
+                                    envia, quem recebe, informe o valor e confirme
+                                    .</p>
+
+                                <p><strong>App:</strong>
+                                    Na tela inicial, toque em <strong>“Transferência de saldo”</strong>, selecione o
+                                    dependente que envia,
+                                    depois o que recebe, informe o valor e confirme.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" aria-label="Como configurar a recarga automática?">
+                            <span> Como configurar a recarga automática?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>A recarga automática pode ser configurada <strong>apenas se a conta estiver vinculada
+                                        ao PayPal</strong>.</p>
+
+                                <p>Caso o vínculo ainda não exista, o sistema solicitará essa configuração. Sem o PayPal
+                                    vinculado, a opção de recarga automática <strong>não ficará disponível</strong>.</p>
+
+                                <p>É necessário que a conta PayPal possua um <strong>cartão de crédito
+                                        cadastrado</strong>.</p>
+
+                                <p>Após o vínculo, o responsável deverá:</p>
+                                <ul class="ulDisc">
+                                    <li>Definir um <strong>valor mínimo de saldo</strong> (que acionará a recarga);</li>
+                                    <li>Informar o <strong>valor da recarga</strong> desejado.</li>
+                                </ul>
+
+                                <p>A recarga será realizada <strong>automaticamente</strong> sempre que o saldo atingir
+                                    o valor configurado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" aria-label="Como funciona a lancheira digital da Bubbe?">
+                            <span> Como funciona a lancheira digital da Bubbe?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>A lancheira digital permite que o responsável <strong>antecipe a compra</strong> da
+                                    alimentação do dependente. Nela, é possível selecionar:</p>
+
+                                <ul class="ulDisc">
+                                    <li>O <strong>período de consumo</strong> (intervalo da manhã, almoço ou intervalo
+                                        da
+                                        tarde);</li>
+                                    <li>As <strong>datas desejadas</strong>, podendo escolher um único dia ou vários.
+                                    </li>
+                                </ul>
+
+                                <p>Após definir o período e as datas, serão exibidos os itens disponíveis. Caso
+                                    <strong>não
+                                        haja itens disponíveis</strong>, significa que a <strong>cantina não
+                                        habilitou</strong> essa opção.
+                                </p>
+
+                                <p>Após a finalização do pedido, a cantina realizará a <strong>entrega no período e nas
+                                        datas selecionadas</strong> para o dependente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger"
+                            aria-label="Como funcionam o limite diário e as restrições alimentares?">
+                            <span> Como funcionam o limite diário e as restrições alimentares?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>O responsável pode configurar um <strong>limite diário de consumo</strong>, definindo
+                                    o
+                                    <strong>valor máximo</strong> que o dependente poderá gastar por dia na cantina.
+                                </p>
+
+                                <p>Também é possível configurar <strong>restrições alimentares</strong>, bloqueando a
+                                    compra
+                                    de <strong>determinados itens</strong> de acordo com os dias da semana selecionados.
+                                </p>
+
+                                <p>Essas configurações podem ser realizadas tanto pelo <strong>aplicativo</strong>
+                                    quanto
+                                    pelo <strong>site (web)</strong> e podem ser ajustadas a <strong>qualquer
+                                        momento</strong>, garantindo mais controle e segurança no consumo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger"
+                            aria-label="Preciso configurar o reconhecimento facial do meu dependente para uso no totem. Como faço isso?">
+                            <span> Preciso configurar o reconhecimento facial do meu dependente para uso no totem. Como
+                                faço
+                                isso?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>O cadastro do reconhecimento facial é realizado <strong>exclusivamente pelo
+                                        aplicativo</strong> da Bubbe. Siga o passo a passo abaixo:</p>
+
+                                <ul>
+                                    <li><strong>Acesse o app:</strong> faça login como responsável.</li>
+                                    <li><strong>Selecione o aluno:</strong> no menu, toque no nome do dependente
+                                        desejado.
+                                    </li>
+                                    <li><strong>Acesse as configurações:</strong> clique no ícone de engrenagem e
+                                        selecione
+                                        <strong>“Editar perfil”</strong>.
+                                    </li>
+                                    <li><strong>Inicie o cadastro:</strong> toque na opção <strong>“Cadastrar
+                                            biometria”</strong>.</li>
+                                    <li><strong>Atenção para a foto:</strong> o aluno deve estar em um <strong>local bem
+                                            iluminado</strong>, sem óculos, boné ou máscara.</li>
+                                    <li><strong>Confirme:</strong> após a leitura, clique em
+                                        <strong>“Confirmar”</strong>
+                                        para salvar.
+                                    </li>
+                                </ul>
+
+                                <p>Após a confirmação, o dependente já estará <strong>habilitado para utilizar o
+                                        totem</strong>.</p>
+
+                                <p>Em caso de dificuldades, envie um print para:
+                                    <strong>atendimento@bubbe.com.br</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger"
+                            aria-label="Como realizar uma recarga online para meu dependente? Quais são as opções disponíveis?">
+                            <span> Como realizar uma recarga online para meu dependente? Quais são as opções
+                                disponíveis?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>A recarga online pode ser realizada pelo site <strong>www.bubbe.com.br</strong> ou
+                                    pelos
+                                    <strong>aplicativos da Bubbe</strong>.
+                                </p>
+
+                                <p>As formas de pagamento disponíveis são:</p>
+                                <ul class="ulDisc">
+                                    <li><strong>Cartão de crédito</strong></li>
+                                    <li><strong>PayPal</strong></li>
+                                    <li><strong>Pix</strong></li>
+                                </ul>
+
+                                <p>Para utilizar o <strong>PayPal</strong>, será necessário vincular ou criar uma conta
+                                    durante o pagamento. Os créditos são processados em <strong>tempo real</strong> e
+                                    ficam
+                                    disponíveis <strong>imediatamente</strong> após a confirmação.</p>
+
+                                <p><em>A Bubbe cobra uma <strong>taxa de serviço</strong> em todas as recargas.</em></p>
+
+                                <hr>
+
+                                <p><strong>Recarga física (offline)</strong></p>
+
+                                <p>A recarga física deve ser realizada <strong>diretamente na cantina</strong>,
+                                    respeitando
+                                    os meios de pagamento praticados pelo estabelecimento.</p>
+
+                                <p><strong>Importante:</strong> A Bubbe <strong>não se responsabiliza</strong> pelo
+                                    ressarcimento de valores de recargas offline, pois o pagamento é feito diretamente
+                                    ao
+                                    estabelecimento. Nessas recargas, também se aplica a <strong>taxa de
+                                        serviço</strong> da
+                                    plataforma.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bubbe-contact-section">
+            <!-- <h1>Não encontrou o que procurava ?</h1>
+
+            <p class="description">
+                <b>Alguma dúvida sobre o uso do aplicativo ou sobre a conta do seu filho?</b><br>
+                Es r você.
+            </p> -->
+
+            <p class="contact-info">
+                Nossa equipe de atendimento está disponível para orientar e esclarecer qualquer questão.
+                Entre em contato pelo e-mail:
+                <a href="mailto:atendimento@bubbe.com.br"
+                    aria-label="E-mail de atendimento da Bubbe">atendimento@bubbe.com.br</a>.
+            </p>
+
+            <!-- <a href="mailto:atendimento@bubbe.com.br?subject=Assunto%20do%20Email&body=Olá,%20este%20é%20o%20corpo%20do%20email."
+                class="call-to-action-button">
+                FALE COM UM CONSULTOR VIA EMAIL
+            </a> -->
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="logo-footer">
+                        <img onclick="goTo('index')" src="./assets/fotos-site/Vector.png" alt="Logo Bubbe">
+                    </div>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="index.html" aria-label="Pais e Alunos">Pais e Alunos</a>
+                    <a href="cantinas-escolas.html" aria-label="Cantinas e Escolas">Cantinas e Escolas</a>
+                    <a href="https://www.appbubbe.com.br/politica-privacidade"
+                        aria-label="Política de Privacidade">Política de Privacidade</a>
+                    <a href="https://www.appbubbe.com.br/termo-de-uso" aria-label="Termos de uso">Termos de uso</a>
+                </nav>
+
+                <div class="footer-right">
+                    <a href="https://www.instagram.com/bubbe.app?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1EbY85tERb/" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/bubbe/" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@bubbe.cantinas" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <hr />
+
+            <p class="copyright">©Copyright. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js" defer></script>
+</body>
+
+</html>

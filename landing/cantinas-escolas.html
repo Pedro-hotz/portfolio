@@ -1,0 +1,927 @@
+<html lang="pt-BR">
+<head>
+    <meta name="description" content="Descubra a plataforma Bubbe para cantinas escolares — solução digital que moderniza as vendas, 
+        facilita recargas online, acelera o atendimento e oferece mais controle para escolas, pais e alunos.">
+    <meta name="keywords"
+        content="cantina escolar, sistema para cantina, gestão de cantina escolar, recarga cantina escola, controle de cantina">
+    <meta name="robots" content="index, follow">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta property="og:title" content="Bubbe - Gestão de Cantinas Escolares">
+
+    <meta property="og:description"
+        content="Descubra a plataforma Bubbe para cantinas escolares — solução digital que moderniza as vendas, facilita recargas online, acelera o atendimento e oferece mais controle para escolas, pais e alunos.">
+
+    <meta property="og:image" content="./assets/fotos-site/logo_bubbe.png">
+
+    <meta property="og:url" content="https://bubbe.com.br">
+
+    <meta property="og:type" content="website">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="./assets/css/cantinas-escolas.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/cantinas-escolas.css">
+    </noscript>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://bubbe.com.br/cantinas-escolas">
+
+    <title>Bubbe</title>
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <a href="index.html" class="logo" aria-label="Logo Bubbe">
+            <img src="./assets/fotos-site/logo-bubbe-preto.png" alt="Logo Bubbe">
+            <!-- <div class="logo-icon">B</div>
+            <span class="logo-text">Bubbe</span> -->
+        </a>
+
+        <nav class="nav-desktop">
+            <a onclick="goTo('cantinas-escolas')" class="nav-link active-pais" aria-label="Cantinas e Escolas">Cantinas
+                e Escolas</a>
+            <a onclick="goTo('index')" class="nav-link" aria-label="Pais e Alunos">Pais e Alunos</a>
+            <a onclick="goTo('faq')" class="nav-link" aria-label="Ajuda">Ajuda</a>
+
+        </nav>
+
+        <div class="btns-desktop">
+            <button class="btn btn-secondary" onclick="goTo('entrar')">Entrar</button>
+            <button class="btn btn-primary" onclick="goTo('cadastrar')">Cadastrar</button>
+        </div>
+
+        <button class="hamburger" id="menuToggle" aria-label="Menu">
+            <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- ===== OVERLAY ===== -->
+    <div class="overlay" id="overlay2"></div>
+
+    <!-- ===== SIDEBAR MOBILE ===== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button id="sidebarClose" aria-label="Fechar">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="cantinas-escolas.html" class="sidebar-link active-pais">Cantinas e Escolas</a>
+            <a href="index.html" class="sidebar-link">Pais e Alunos</a>
+        </nav>
+        <div class="sidebar-btns">
+            <button class="btn btn-secondary" onclick="goTo('entrar')">Entrar</button>
+            <button class="btn btn-primary" onclick="goTo('cadastrar')">Cadastrar</button>
+        </div>
+    </aside>
+
+    <main>
+
+        <!-- <div class="container-apresent">
+             Background
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="apresent-text">
+                <video class="video-player" muted loop playsinline controls>
+                    <source src="assetsfotos-site/video-institucional (1).mp4" type="video/mp4" />
+                    Seu navegador não suporta vídeo.
+                </video> -->
+        <!-- <button (click)="scrollToContato()">
+                    <span>Entre em contato</span>
+                </button> -->
+        <!-- </div>
+
+            
+        </div> -->
+
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-grid">
+                    <!-- Video Section -->
+                    <!-- <div class="video-wrapper">
+                        <div class="video-thumbnail">
+                             <div class="video-overlay pais"></div>
+
+                             <div class="play-button-container">
+                                <div class="play-button-wrapper">
+                                    <div class="play-pulse"></div>
+                                    <button class="play-button">
+                                        <svg class="play-icon pais" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="5,3 19,12 5,21"></polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            
+                            <div class="video-label">
+                                <span>▶ Assista o vídeo</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Content Section -->
+                    <div class="content-wrapper">
+                        <!-- <span class="badge pais">Para Pais e Responsáveis</span> -->
+                        <span class="hero-title">Mais que tecnologia, é parceria</span>
+                        <p class="hero-description">
+                            A única plataforma feita para
+                            cantinas escolares que <span>aumenta
+                                suas vendas</span>, <span>antecipa pagamentos</span>
+                            e <span>ainda retorna parte da receita para você</span>.
+                        </p>
+                        <button class="cta-button pais" onclick="goTo('video')">
+                            Conheça mais sobre a Bubbe
+                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+
+                    <div class="form-card">
+                        <h3 class="form-title">
+                            Fale diretamente com um consultor Bubbe
+                        </h3>
+
+                        <!-- WhatsApp Button -->
+                        <a class="btn-whatsapp" target="_blank" aria-label="Mandar WhatsApp"
+                            href="https://wa.me/5511915661190?text=Oi,%20gostaria%20de%20saber%20mais%20sobre%20o%20Sistema.">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            WHATSAPP
+                        </a>
+
+                        <!-- Divider -->
+                        <div class="divider">
+                            <div class="divider-line"></div>
+                            <span class="divider-text">Ou preencha o formulário que entraremos em contato</span>
+                            <div class="divider-line"></div>
+                        </div>
+
+                        <!-- Form -->
+                        <form class="contact-form" id="contactForm">
+
+                            <input placeholder="Nome" class="form-input" id="name" type="text" name="name" required>
+
+                            <input placeholder="Email ou Telefone" class="form-input" id="email" name="email" required>
+
+                            <button type="submit" class="btn-submit" id="submitBtn">
+                                Enviar
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="benefits-section">
+            <div class="benefits-container">
+                <!-- Header -->
+                <div class="benefits-header">
+                    <span class="benefits-badge">Por que escolher a Bubbe?</span>
+                    <h2 class="benefits-title">Benefícios para sua cantina</h2>
+                    <p class="benefits-subtitle">Soluções completas para modernizar e aumentar a rentabilidade do seu
+                        negócio</p>
+                </div>
+
+                <!-- Grid Pirâmide Invertida -->
+                <div class="benefits-grid">
+                    <!-- Linha de cima - 3 cards -->
+                    <div class="benefits-row benefits-row-top">
+                        <div class="benefit-card emerald">
+                            <div class="benefit-content">
+                                <div class="benefit-icon emerald">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                        <polyline points="16 7 22 7 22 13" />
+                                    </svg>
+                                </div>
+                                <h3 class="benefit-title emerald">Aumente em até 30% suas vendas</h3>
+                                <p class="benefit-description">Não perca clientes por filas ou falta de troco. Trabalhe
+                                    com créditos já carregados, reservas antecipadas, e totem de autoatendimento.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card violet">
+                            <div class="benefit-content">
+                                <div class="benefit-icon violet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </div>
+                                <h3 class="benefit-title violet">Renda extra Bubbe</h3>
+                                <p class="benefit-description">A Bubbe devolve parte da receita para sua cantina. Mais
+                                    alunos usando, mais dinheiro entrando para você.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card amber">
+                            <div class="benefit-content">
+                                <div class="benefit-icon amber">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+                                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                                        <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+                                        <path d="M2 7h20" />
+                                        <path
+                                            d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" />
+                                    </svg>
+                                </div>
+                                <h3 class="benefit-title amber">100% desenvolvido para cantinas</h3>
+                                <p class="benefit-description">Venda lanches e almoços, controle estoque e fluxo de
+                                    caixa, emita notas fiscais, e acesse dezenas de relatórios.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linha de baixo - 2 cards centralizados -->
+                    <div class="benefits-row benefits-row-bottom">
+                        <div class="benefit-card sky">
+                            <div class="benefit-content">
+                                <div class="benefit-icon sky">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect width="20" height="14" x="2" y="5" rx="2" />
+                                        <line x1="2" x2="22" y1="10" y2="10" />
+                                    </svg>
+                                </div>
+                                <h3 class="benefit-title sky">Melhor método de pagamento</h3>
+                                <p class="benefit-description">Antecipamos todas as recargas, independente se e quando
+                                    são consumidas, gerando em média 12 dias de caixa extra.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card rose">
+                            <div class="benefit-content">
+                                <div class="benefit-icon rose">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+                                        <path
+                                            d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+                                        <path d="m21 3 1 11h-2" />
+                                        <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+                                        <path d="M3 4h8" />
+                                    </svg>
+                                </div>
+                                <h3 class="benefit-title rose">Rede de parcerias exclusivas</h3>
+                                <p class="benefit-description">Acesso a descontos e benefícios em uma rede de parceiros
+                                    selecionados para pais e filhos, aumentando o valor da sua cantina.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div class="carousel-container">
+
+            <h1>Gestão completa</h1>
+            <p>A plataforma mais completa e 100% desenvolvida para cantinas escolares</p>
+
+            <div class="carousel-content">
+                <div class="seta-img">
+
+                    <button class="carousel-arrow left" id="prevBtn">&#10094;</button>
+
+                    <div class="carousel-image" id="carousel">
+
+                        <!-- Imagens -->
+                        <img src="./assets/fotos-site/fotos-carrossel/ResumeVendas.png"
+                            alt="Controle de vendas, recargas e fluxo de caixa" class="carousel-slide active">
+                        <img src="./assets/fotos-site/fotos-carrossel/Pdv.png"
+                            alt="PDV completo - alunos e colaboradores" class="carousel-slide">
+                        <img src="./assets/fotos-site/fotos-carrossel/Faturamento.png" alt="Gestão de faturamento"
+                            class="carousel-slide">
+                        <img src="./assets/fotos-site/fotos-carrossel/ControleEstoque.png" alt="Gestão de estoque"
+                            class="carousel-slide">
+
+
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                            <span class="indicator" data-slide="3"></span>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-arrow right" id="nextBtn">&#10095;</button>
+
+                </div>
+
+                <!-- Texto fixo -->
+                <div class="carousel-text">
+                    <div class="name-foto">
+                        <img src="./assets/fotos-site/fluxo-de-caixa.png"
+                            alt="Controle de vendas, recargas e fluxo de caixa no sistema Bubbe">
+                        <p>Controle de vendas, recargas e fluxo de caixa</p>
+                    </div>
+
+                    <div class="name-foto">
+                        <img src="./assets/fotos-site/ponto-de-venda.png" alt="Ponto de venda do sistema Bubbe">
+                        <p>PDV completo - alunos Bubbe, outros alunos e colaboradores</p>
+                    </div>
+
+                    <div class="name-foto">
+                        <img src="./assets/fotos-site/fatura.png" alt="Gestão de faturamento no sistema Bubbe">
+                        <p>Gestão de faturamento</p>
+                    </div>
+
+                    <div class="name-foto">
+                        <img src="./assets/fotos-site/painel-de-controle.png" alt="Painel de controle do sistema Bubbe">
+                        <p>Gestão de estoque</p>
+                    </div>
+
+                    <div class="name-foto">
+                        <img src="./assets/fotos-site/taxa.png" alt="Módulo de emissão de notas fiscais">
+                        <p>Módulo de emissão de notas fiscais</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <section class="pdv-section">
+
+            <h1 class="titulo-pdv">
+                Menos<span> fila </span>para o seu filho
+
+                <img src="./assets/fotos-site/totem/mesa.webp" alt="Mesa" class="icone-mesa" />
+            </h1>
+
+            <div class="pdv-container">
+                <img src="./assets/fotos-site/fluxo-recarga.webp" alt="Fluxo de recarga no sistema Bubbe">
+            </div>
+
+
+            <section class="flow-section">
+
+
+                <div class="flow-container">
+                    <div class="flow-main">
+                        <div class="flow-step">
+
+                            <img src="./assets/fotos-site/totem/fluxo1-1.webp"
+                                alt="Fluxo de recarga do sistema Bubbe - pai fazendo recarga no app">
+                        </div>
+
+                        <div class="flow-arrow">➜</div>
+
+                        <div class="flow-step">
+
+                            <img src="./assets/fotos-site/totem/fluxo1-2.webp"
+                                alt="Fluxo de recarga do sistema Bubbe - aluno no totem">
+                        </div>
+
+                        <div class="flow-arrow">➜</div>
+
+                        <div class="flow-step">
+
+                            <img src="./assets/fotos-site/totem/fluxo1-3.webp"
+                                alt="Fluxo de recarga do sistema Bubbe - aluno retirando lanche no totem">
+                        </div>
+                    </div>
+
+                    <div class="connection-line">
+                        <div class="line"></div>
+                        <span class="or-badge">OU</span>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="flow-alternative">
+                        <div class="alt-title">
+                            Fluxo de Reserva Antecipada
+                        </div>
+
+                        <div class="alt-steps">
+                            <div class="alt-step">
+
+                                <img src="./assets/fotos-site/totem/fluxo2-1.webp"
+                                    alt="Fluxo de reserva antecipada - pai fazendo reserva no app">
+                            </div>
+
+                            <div class="alt-step">
+
+                                <img src="./assets/fotos-site/totem/fluxo1-3.webp"
+                                    alt="Fluxo de reserva antecipada - cantina confere a reserva">
+                            </div>
+
+                            <div class="alt-step">
+
+                                <img src="./assets/fotos-site/totem/retirando-lanche.webp"
+                                    alt="Fluxo de reserva antecipada - Aluno retirando lanche no totem">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+
+        <section class="video-section" id="video">
+            <div class="container">
+                <div class="video-grid">
+                    <!-- Left Side - Text Content -->
+                    <div class="video-text">
+                        <span class="video-label">Conheça o Bubbe</span>
+                        <h2 class="video-title">
+                            Veja como funciona <span class="highlight">na prática</span>
+                        </h2>
+                        <p class="video-description">
+                            Descubra como o Bubbe transforma a experiência da cantina escolar.
+                            Nossa plataforma conecta pais, escolas e cantinas em um único
+                            ecossistema digital, trazendo mais segurança e praticidade para o dia a dia.
+                        </p>
+
+
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <div class="stat-value">+500</div>
+                                <div class="stat-label">Escolas parceiras</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">+50k</div>
+                                <div class="stat-label">Famílias ativas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value accent">98%</div>
+                                <div class="stat-label">Satisfação</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-video">
+                        <div class="video-wrapper" id="openVideoBtn">
+
+                            <div class="video-thumbnail">
+                                <div class="video-overlay pais"></div>
+
+                                <div class="play-button-container">
+                                    <div class="play-button-wrapper">
+                                        <div class="play-pulse"></div>
+
+                                        <button class="play-button">
+                                            <svg class="play-icon pais" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon points="5,3 19,12 5,21"></polygon>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Modal -->
+        <div class="video-modal" id="videoModal">
+
+            <div class="modal-overlay" id="overlay"></div>
+
+            <div class="modal-content">
+                <button class="modal-close" id="closeVideo">×</button>
+
+                <iframe id="videoFrame" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+
+
+
+        <section class="testimonials-section">
+            <div class="container">
+
+                <!-- Header -->
+                <div class="section-header">
+
+                    <h2 class="section-title">
+                        O Que Dizem os
+                        <span class="highlight">
+                            Cantineiros
+                            <svg viewBox="0 0 200 12" fill="none">
+                                <path d="M2 10C50 4 150 4 198 10" stroke="#f97316" stroke-width="3"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </h2>
+
+                    <p class="section-description">
+                        Histórias reais de cantineiros que confiam em nosso trabalho.
+                    </p>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="testimonials-grid" id="testimonialsContainer">
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <!-- Header -->
+                <div class="faq-header">
+                    <!-- <span class="faq-badge">Dúvidas Frequentes</span> -->
+                    <h2 class="faq-title">Perguntas Frequentes</h2>
+                    <p class="faq-subtitle">Encontre respostas para as principais dúvidas sobre nossos programas e
+                        serviços.</p>
+                </div>
+
+                <!-- Accordion -->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-trigger">
+                            <span>Como funcionam os repasses das recargas para a cantina?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Os responsáveis podem realizar recargas online pelo site
+                                    <strong>www.bubbe.com.br</strong> ou pelos <strong>aplicativos da
+                                        Bubbe</strong>.
+                                </p>
+
+                                <p><strong>As formas de pagamento disponíveis são:</strong></p>
+                                <ul class="ulDisc">
+                                    <li><strong>Cartão de crédito</strong> (Visa, MasterCard, American Express, Elo
+                                        e
+                                        Hipercard)</li>
+                                    <li><strong>PayPal</strong></li>
+                                    <li><strong>Pix</strong></li>
+                                </ul>
+
+                                <p>Para receber recargas via cartão e PayPal, é <strong>obrigatório</strong> que a
+                                    cantina possua uma <strong>conta PayPal ativa</strong>.</p>
+
+                                <p><strong>Sobre os repasses:</strong></p>
+                                <ul class="ulDisc">
+                                    <li>É cobrada uma <strong>taxa de transação</strong> sobre o valor total da
+                                        recarga.
+                                    </li>
+                                    <li>Os valores ficam disponíveis conforme o meio de pagamento:</li>
+                                    <ul class="ulDisc">
+                                        <li><strong>Cartão de crédito e PayPal:</strong> até <strong>7 dias
+                                                corridos</strong></li>
+                                        <li><strong>Pix:</strong> no <strong>dia seguinte</strong> à recarga</li>
+                                    </ul>
+                                    <li>Após a liberação, o valor pode ser transferido para qualquer <strong>conta
+                                            bancária confirmada</strong>.</li>
+                                </ul>
+
+                                <p>O valor repassado à cantina corresponde ao <strong>valor líquido</strong> da
+                                    recarga,
+                                    independentemente de o saldo já ter sido utilizado ou não pelo aluno. A recarga
+                                    representa uma <strong>antecipação</strong> feita à cantina.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" [class.open]="isOpen(1)">
+                        <button class="accordion-trigger" (click)="toggle(1)">
+                            <span>Como funcionam os relatórios de recarga?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content" [style.maxHeight]="isOpen(1) ? '500px' : '0'">
+                            <div class="accordion-content-inner">
+                                <p>O sistema disponibiliza <strong>relatórios completos de recargas</strong> no
+                                    menu:
+                                    <strong>Acesso Administrativo > Relatórios</strong>, organizados da seguinte
+                                    forma:
+                                </p>
+
+                                <ul>
+                                    <li><strong>Relatório geral:</strong> reúne todas as recargas (cartão, Pix,
+                                        PayPal
+                                        ou caixa).</li>
+                                    <li><strong>Relatórios específicos:</strong> separação por modalidade para
+                                        acompanhamento detalhado.
+                                        <ul class="ulDisc">
+                                            <li><strong>PayPal e Cartão:</strong> valores a receber e já recebidos.
+                                            </li>
+                                            <li><strong>Pix:</strong> acompanhamento detalhado das transações.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <p>Nos relatórios, é possível visualizar:</p>
+                                <ul class="ulDisc">
+                                    <li>Data da recarga</li>
+                                    <li>Aluno e responsável vinculados</li>
+                                    <li>Forma de pagamento utilizada</li>
+                                    <li><strong>Valor bruto, taxas e valor líquido</strong></li>
+                                    <li>Status da transação</li>
+                                </ul>
+
+                                <p>Os relatórios podem ser consultados a <strong>qualquer momento</strong>,
+                                    facilitando
+                                    o <strong>controle financeiro</strong> e a <strong>conciliação de
+                                        valores</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" [class.open]="isOpen(2)">
+                        <button class="accordion-trigger" (click)="toggle(2)">
+                            <span>O sistema possui integração com emissão de nota fiscal?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content" [style.maxHeight]="isOpen(2) ? '500px' : '0'">
+                            <div class="accordion-content-inner">
+                                <p>Sim. O sistema <strong>Bubbe</strong> é integrado à <strong>NFC-e</strong>,
+                                    permitindo a emissão de notas fiscais de forma prática e
+                                    <strong>automatizada</strong> diretamente pelo sistema.
+                                </p>
+                                <p>A emissão é <strong>opcional por produto</strong>. Você pode configurar quais
+                                    itens
+                                    irão ou não gerar nota fiscal, de acordo com a sua necessidade e com a
+                                    <strong>legislação aplicável</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" [class.open]="isOpen(3)">
+                        <button class="accordion-trigger" (click)="toggle(3)">
+                            <span>Como editar vários produtos ao mesmo tempo no sistema?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content" [style.maxHeight]="isOpen(3) ? '500px' : '0'">
+                            <div class="accordion-content-inner">
+                                <p>Acesse <strong>Perfil Administrativo > Produtos</strong> e selecione um cardápio
+                                    ou
+                                    todos os itens. Clique em <strong>“Editar produtos”</strong> (botão azul na
+                                    parte
+                                    superior).</p>
+                                <p>Esta opção permite editar <strong>diversos produtos simultaneamente</strong>,
+                                    economizando tempo. Ao finalizar, será solicitada uma <strong>justificativa para
+                                        alteração de estoque</strong>, que é obrigatória para o controle.</p>
+                                <p>O histórico de alterações pode ser consultado em: <strong>Perfil Administrativo >
+                                        Relatórios > Controle de Estoque</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" [class.open]="isOpen(4)">
+                        <button class="accordion-trigger" (click)="toggle(4)">
+                            <span>Como utilizar a funcionalidade de produtos vendidos por peso (KG)?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content" [style.maxHeight]="isOpen(4) ? '500px' : '0'">
+                            <div class="accordion-content-inner">
+                                <p>Para ativar essa função, a cantina deve cadastrar o produto com o tipo de estoque
+                                    <strong>“KG”</strong>. Esta opção fica logo abaixo de “Produto disponível na
+                                    lancheira digital”.
+                                </p>
+                                <p><strong>Importante:</strong> Produtos por peso possuem <strong>estoque
+                                        ilimitado</strong> e <strong>não podem</strong> ser disponibilizados na
+                                    lancheira digital.</p>
+                                <p>No momento da venda, o sistema solicitará o <strong>peso do produto</strong> e
+                                    calculará automaticamente o <strong>valor final</strong> com base no preço por
+                                    KG
+                                    configurado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" [class.open]="isOpen(5)">
+                        <button class="accordion-trigger" (click)="toggle(5)">
+                            <span>Como realizar o reembolso de saldo do aluno para o responsável?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content" [style.maxHeight]="isOpen(5) ? '500px' : '0'">
+                            <div class="accordion-content-inner">
+                                <p>O reembolso deve ser realizado <strong>diretamente pela cantina</strong> (via Pix
+                                    ou
+                                    transferência), conforme suas políticas internas, pois o valor já foi repassado
+                                    ao
+                                    estabelecimento.</p>
+                                <p>Para registrar no sistema, acesse a opção <strong>“Remoção de saldo”</strong>
+                                    (disponível para PDV, Gerente ou Admin) seguindo o caminho: <strong>PDV >
+                                        Pesquisar
+                                        nome do aluno > Ver cadastro</strong>.</p>
+                                <p>Basta <strong>zerar o saldo</strong> no sistema para que o extrato fique correto
+                                    e o
+                                    controle financeiro seja mantido.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" [class.open]="isOpen(6)">
+                        <button class="accordion-trigger" (click)="toggle(6)">
+                            <span>Como funciona a recarga offline (presencial)?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content" [style.maxHeight]="isOpen(6) ? '500px' : '0'">
+                            <div class="accordion-content-inner">
+                                <p>É a recarga feita diretamente no caixa da cantina. Após receber o valor, o
+                                    operador
+                                    registra no sistema e o saldo fica <strong>disponível imediatamente</strong>.
+                                </p>
+                                <p><strong>Atenção à Taxa:</strong> A taxa de serviço da Bubbe também se aplica
+                                    aqui.
+                                    Como a cantina recebe o valor integral, a taxa será <strong>compensada
+                                        posteriormente</strong> (descontada no próximo repasse de recargas online).
+                                </p>
+                                <p>A opção de recarga está disponível na <strong>tela inicial do perfil
+                                        PDV</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" [class.open]="isOpen(7)">
+                        <button class="accordion-trigger" (click)="toggle(7)">
+                            <span>Como realizar o controle de estoque pelo sistema?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content" [style.maxHeight]="isOpen(7) ? '500px' : '0'">
+                            <div class="accordion-content-inner">
+                                <p>O sistema possui <strong>três modalidades</strong>:</p>
+                                <ul>
+                                    <li><strong>Estoque Ilimitado:</strong> Produto sempre disponível.</li>
+                                    <li><strong>Estoque por KG:</strong> Também ilimitado, para produtos pesados.
+                                    </li>
+                                    <li><strong>Estoque por Contagem:</strong> Controle manual. Quando atinge
+                                        <strong>zero</strong>, o item some do PDV automaticamente.
+                                    </li>
+                                </ul>
+                                <p>Dica: Use a <strong>“Quantidade mínima em estoque”</strong> para receber alertas.
+                                    No
+                                    menu <strong>Produtos > Em baixa</strong>, você visualiza o que precisa de
+                                    reposição
+                                    urgente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" [class.open]="isOpen(8)">
+                        <button class="accordion-trigger" (click)="toggle(8)">
+                            <span>Como funciona a categoria “Funcionário”?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content" [style.maxHeight]="isOpen(8) ? '500px' : '0'">
+                            <div class="accordion-content-inner">
+                                <p>Gerenciada totalmente pela cantina, possui dois modelos principais:</p>
+                                <ul>
+                                    <li><strong>Pré-pago:</strong> O Admin/Gerente faz a recarga no perfil do
+                                        colaborador. <strong>Não há cobrança de taxa</strong> neste modelo.</li>
+                                    <li><strong>Pós-pago:</strong> O funcionário consome e gera um <strong>débito em
+                                            aberto</strong>.</li>
+                                </ul>
+                                <p>No modelo pós-pago, o controle é feito via <strong>PDV > Pagamento
+                                        funcionário</strong>, onde é possível quitar valores totais ou parciais.</p>
+                                <p>Relatórios específicos de <strong>consumo e pendências</strong> estão disponíveis
+                                    no
+                                    menu Administrativo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bubbe-contact-section">
+            <!-- <h1>Não encontrou o que procurava ?</h1> -->
+
+            <!-- <p class="description">
+                <b>Alguma dúvida sobre o uso do aplicativo ou sobre a funcionalidades ?</b><br>
+                Estamos aqui para ajudar você.
+            </p> -->
+
+            <p class="contact-info">
+                Nossa equipe de atendimento está disponível para orientar e esclarecer qualquer questão.
+                Entre em contato pelo e-mail:
+                <a href="mailto:atendimento@bubbe.com.br" class="email-link"
+                    aria-label="E-mail de atendimento">atendimento@bubbe.com.br</a>.
+            </p>
+
+            <!-- <a href="mailto:atendimento@bubbe.com.br?subject=Assunto%20do%20Email&body=Olá,%20este%20é%20o%20corpo%20do%20email."
+                class="call-to-action-button">
+                FALE COM UM CONSULTOR VIA EMAIL
+            </a> -->
+        </section>
+
+
+        <a href="https://wa.me/5511915661190?text=Oi,%20gostaria%20de%20saber%20mais%20sobre%20o%20Sistema."
+            class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="link para o WhatsApp">
+            <img src="./assets/fotos-site/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="logo-footer">
+                        <img src="./assets/fotos-site/Vector.png" alt="Logo Bubbe">
+                    </div>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="index.html" aria-label="Pais e Alunos">Pais e Alunos</a>
+                    <a href="cantinas-escolas.html" aria-label="Cantinas e Escolas">Cantinas e Escolas</a>
+                    <a href="https://www.appbubbe.com.br/politica-privacidade"
+                        aria-label="Política de Privacidade">Política de Privacidade</a>
+                    <a href="https://www.appbubbe.com.br/termo-de-uso" aria-label="Termos de uso">Termos de uso</a>
+                </nav>
+
+                <div class="footer-right">
+                    <a href="https://www.instagram.com/bubbe.app?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1EbY85tERb/" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/bubbe/" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@bubbe.cantinas" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <hr />
+
+            <p class="copyright">©Copyright. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="cantinas-escolas.js"></script>
+</body>
+</html>
