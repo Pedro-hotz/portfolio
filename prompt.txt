@@ -56,12 +56,59 @@ Inclua botões de filtro no topo (Todos, Frontend, Backend).
 Lógica JS: Implemente o filtro para que os cards apareçam/desapareçam com uma animação de fade-in suave."
 
 
-Requisição 4: "Gere o Formulário de Contato e o Rodapé.
 
-Formulário: Design minimalista (apenas linha inferior), com validação Regex em tempo real no campo de e-mail (borda fica verde se estiver correto).
+Requisição 4: Formulário de Contato, Redes Sociais e Terminal Interativo
 
-Easter Egg (Terminal): No rodapé, inclua um pequeno input que simula um Terminal. Se digitar 'help', mostra comandos. Se digitar 'cv', simula o download do currículo.
+1. Formulário de Contato (Estilo Google):
 
-Persistência: Garanta que a escolha de idioma seja salva no localStorage."
+Design: Minimalista, com apenas uma linha inferior (border-bottom).
+
+Efeito Float Label: O placeholder deve ser uma label que, ao ganhar foco (:focus) ou quando o campo estiver preenchido (:not(:placeholder-shown)), sobe para cima da linha, diminuindo de tamanho e mudando de cor para o ciano do tema.
+
+Validação Regex: No campo de e-mail, valide o formato em tempo real via JS. A linha inferior deve transicionar suavemente para verde (#00ff88) se válido, ou vermelho se inválido.
+
+2. Seção de Redes Sociais:
+
+Crie uma área organizada com ícones minimalistas para LinkedIn, GitHub, WhatsApp, E-mail e Instagram.
+
+Efeito Hover: Ao passar o mouse, o ícone deve ter um leve brilho (glow) e exibir o nome da rede em fonte monoespaçada.
+Estética: Use ícones de traço fino (SVG) em estilo minimalista. Todos devem começar com uma cor cinza suave (#8B949E).
+
+Interação (Hover): Ao passar o mouse sobre cada ícone:
+
+O ícone deve assumir a cor original da marca (ex: GitHub = Branco, LinkedIn = #0077B5).
+
+Deve surgir um efeito de "Glow" (brilho externo) sutil da mesma cor.
+
+Exiba o @username ou o nome da rede ao lado com uma animação de "slide-in" lateral, usando fonte Mono.
+
+Informações: Inclua LinkedIn, GitHub, WhatsApp (com ícone de telefone/chat), E-mail e Instagram.
+
+Acessibilidade: Garanta que cada link tenha um atributo aria-label e abra em uma nova aba (target="_blank").
+
+3. Terminal Easter Egg (Rodapé):
+
+Interface: Um container estilo "console" com fundo preto absoluto e fonte mono.
+
+Comando 'help': Lista os comandos disponíveis (cv, clear, socials).
+
+Comando 'cv' (Simulação NPM): Ao digitar 'cv', não inicie o download direto. Primeiro, exiba uma animação no terminal simulando um npm install. Exemplo:
+Fetching currículo_pedro.pdf [####------] 40%.
+Somente após chegar em 100%, dispare o download real do arquivo.
+
+4. Persistência e Idioma (localStorage):
+
+Toda a lógica de troca de textos (PT/EN) deve buscar a preferência no localStorage.
+
+Se o usuário mudar o idioma no Header, o Formulário e o Terminal devem atualizar seus textos/mensagens instantaneamente.
+
+5. Regras Técnicas:
+
+Use CSS Flexbox/Grid para o layout do rodapé.
+
+Mantenha o Glassmorphism nos containers e a responsividade para mobile.
+
+JavaScript Vanilla puro, organizado e comentado.
+
 
 -->
