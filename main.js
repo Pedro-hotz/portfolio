@@ -311,6 +311,23 @@ function initContactForm() {
   });
 }
 
+// emailjs.init("SEU_USER_ID");
+
+// function enviarEmail() {
+//   emailjs.send("service_l853aeq", "template_id", {
+//     nome: "Pedro",
+//     mensagem: "Teste de email"
+//   }).then(function(response) {
+//     console.log("Email enviado!", response.status);
+//   }, function(error) {
+//     console.log("Erro:", error);
+//   });
+// }
+
+
+
+
+
 /* ============================================================
    6. TERMINAL EASTER EGG
    ============================================================ */
@@ -320,11 +337,11 @@ function initTerminal() {
   if (!body || !input) return;
 
   const socials = [
-    { label: "GitHub", handle: "@seuusuario" },
-    { label: "LinkedIn", handle: "@seuusuario" },
-    { label: "WhatsApp", handle: "+55 11 99999-9999" },
-    { label: "E-mail", handle: "seu@email.com" },
-    { label: "Instagram", handle: "@seuusuario" },
+    { label: "GitHub", handle: "@Pedro-hotz" },
+    { label: "LinkedIn", handle: "@pedro-hotz123" },
+    { label: "WhatsApp", handle: "+55 21 97026-8881" },
+    { label: "E-mail", handle: "pfh92006@gmail.com" },
+    { label: "Instagram", handle: "@pedrohotz_" },
   ];
 
   function addLine(type, text) {
@@ -362,7 +379,7 @@ function initTerminal() {
         clearInterval(interval);
         setTimeout(() => {
           addLine("success", t["terminal.cv.done"]);
-          /* Aqui dispararia o download real: window.open("./assets/curriculo.pdf") */
+          window.open("erro.txt")
         }, 300);
       }
     }, 200);

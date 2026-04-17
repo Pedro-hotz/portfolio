@@ -26,7 +26,7 @@
 }
 
 /* --- Reset & Base --- */
-.portfolio-root {
+body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-primary);
@@ -39,12 +39,16 @@
   overflow-x: hidden;
 }
 
-.portfolio-root *,
-.portfolio-root *::before,
-.portfolio-root *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.portfolio-root {
+  min-height: 100vh;
 }
 
 /* --- Mouse Trail Effect --- */
@@ -376,7 +380,16 @@
   border-radius: 50%;
   padding: 4px;
   background: var(--gradient-accent);
-  /* animation: rotate-border 4s linear infinite; */
+}
+
+.profile-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--gradient-accent);
+  z-index: -1;
+  animation: rotate-border 4s linear infinite;
 }
 
 @keyframes rotate-border {
